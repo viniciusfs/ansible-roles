@@ -1,0 +1,18 @@
+[submodule "ansible-role-glusterfs"]
+	path = ansible-role-glusterfs
+	url = git@github.com:viniciusfs/ansible-role-glusterfs.git
+[submodule "ansible-role-epel"]
+	path = ansible-role-epel
+	url = git@github.com:viniciusfs/ansible-role-epel.git
+[submodule "ansible-role-java"]
+	path = ansible-role-java
+	url = git@github.com:viniciusfs/ansible-role-java.git
+[submodule "ansible-role-ntp"]
+	path = ansible-role-ntp
+	url = git@github.com:viniciusfs/ansible-role-ntp.git
+[submodule "ansible-role-tomcat"]
+	path = ansible-role-tomcat
+	url = git@github.com:viniciusfs/ansible-role-tomcat.git
+[submodule "ansible-role-sshd"]
+	path = ansible-role-sshd
+	url = git@github.com:viniciusfs/ansible-role-sshd.git
