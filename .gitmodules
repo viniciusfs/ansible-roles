@@ -16,3 +16,6 @@
 [submodule "ansible-role-sshd"]
 	path = ansible-role-sshd
 	url = git@github.com:viniciusfs/ansible-role-sshd.git
+[submodule "ansible-role-supervisord"]
+	path = ansible-role-supervisord
+	url = git@github.com:viniciusfs/ansible-role-supervisord.git
