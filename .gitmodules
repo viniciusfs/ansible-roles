@@ -19,3 +19,6 @@
 [submodule "ansible-role-supervisord"]
 	path = ansible-role-supervisord
 	url = git@github.com:viniciusfs/ansible-role-supervisord.git
+[submodule "ansible-role-ipv6-support"]
+	path = ansible-role-ipv6-support
+	url = https://github.com/viniciusfs/ansible-role-ipv6-support.git
