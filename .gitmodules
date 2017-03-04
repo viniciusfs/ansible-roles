@@ -22,3 +22,6 @@
 [submodule "ansible-role-ipv6-support"]
 	path = ansible-role-ipv6-support
 	url = https://github.com/viniciusfs/ansible-role-ipv6-support.git
+[submodule "ansible-role-firewalld"]
+	path = ansible-role-firewalld
+	url = https://github.com/viniciusfs/ansible-role-firewalld.git
