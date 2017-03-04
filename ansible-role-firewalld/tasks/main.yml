@@ -1,0 +1,29 @@
+---
+- name: Install firewalld package
+  yum: >
+    name=firewalld
+    state=installed
+
+- name: Start and enable firewalld service
+  systemd: >
+    name=firewalld
+    state=started
+    enabled=yes
+
+- name: Deploy firewalld rules for ports
+  firewalld: >
+    port={{ item.port }}
+    zone={{ item.zone | default("public") }}
+    permanent={{ item.permanent | default(True) }}
+    state={{ item.state | default("enabled") }}
+  with_items: "{{ firewalld_ports }}"
+  notify: firewalld_reload
+
+- name: Deploy firewalld rules for services
+  firewalld: >
+    service={{ item.service }}
+    zone={{ item.zone | default("public") }}
+    permanent={{ item.permanent | default(True) }}
+    state={{ item.state | default("enabled") }}
+  with_items: "{{ firewalld_services }}"
+  notify: firewalld_reload
